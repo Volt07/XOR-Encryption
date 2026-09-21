@@ -1,3 +1,4 @@
+#define _CTR_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <string.h>
 
@@ -57,6 +58,7 @@ int main() {
     char choice;
     printf("Enter 'e' to encrypt or 'd' to decrypt: ");
     scanf(" %c", &choice);
+    getchar();
 
     if (choice == 'e') {
         char message[100];
